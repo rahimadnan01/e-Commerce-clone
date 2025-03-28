@@ -1,0 +1,80 @@
+.OptionIconsinputImage {
+    max-width:42px;
+    display:inline-block;
+    margin-right:5px;
+    margin-bottom:2px;
+    padding:5px;
+}
+.optionIconSelectPlaceholder {
+    color: #777;
+    display:inline-block;
+    background: #fff;
+    line-height: 18px;
+    outline: none;
+    font-size: 13px;
+    padding:5px;
+    width:100%;
+    /*max-width: 160px;*/
+    border: 1px solid #eaeaea;
+    max-height:32px;
+    height: 32px;
+    position:relative;
+    cursor:default;
+    vertical-align: middle;
+}
+.optionIconSelectPlaceholder span {
+    overflow:hidden;
+    max-height:20px;
+    display:block;
+}
+.optionIconSelectPlaceholder span:after {
+    content: "\25BC";
+    font-size:9px;
+    right:5px;
+    position:absolute;
+    top:6px;
+}
+.optionIconSelectPlaceholder ul li:hover {
+    background-color: #eaeaea;
+}
+.optionIconSelectPlaceholder ul li {
+    padding:5px;
+    list-style: none;
+}
+.optionIconSelectPlaceholder ul {
+    list-style: none;
+    clear: left;
+    display:none;
+    padding:0;
+    position:absolute;
+    top:31px;
+    left:-1px;
+    z-index:2;
+    background:#fff;
+    width: calc(100% + 2px);
+    border: 1px solid #eaeaea;
+
+    max-height: 400px;
+    overflow-y: auto;
+}
+.optionIconSelectedOption img, .optionIconOptionPlaceholder img {
+    max-width:32px;
+    display:inline-block;
+    margin-right:5px;
+    margin-bottom:2px;
+    vertical-align:middle;
+}
+.optionIconSelectedOption img {
+    vertical-align:top;
+}
+@media only screen and (max-width:768px){
+    .optionIconSelectPlaceholder, .optionIconSelectPlaceholder ul {
+        max-width:100%;
+        width:100%;
+
+        max-height: 75vh;
+    }
+    .OptionIconsinputImage {
+        width:15%;
+    }
+}
